@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>todo-list</title>
+<link rel="stylesheet" href="resources/css/all.css">
+<link rel="stylesheet" href="resources/css/reset.css">
+<link rel="stylesheet" href="resources/css/todo-list.css">
+<script type="text/javascript" src="resources/js/webUtil.js"></script>
+<script defer type="text/javascript" src="resources/js/bg.js"></script>
+<script defer type="text/javascript" src="resources/js/main.js"defer></script>
+<style type="text/css">
+div{
+	/* box-shadow : 0 0 1px black; */
+	/* 영역을 나누는 줄. 초반 확인용 */
+}
+</style>
+</head>
+<body>
+	<div class="location">
+		<span class='txt_location'>26.2º @ jamwon-dong</span>
+	</div>
+	<div class="main">
+		<div class = 'todo-list'>
+			<p>Your Work</p>
+			<p>
+				<i class="fas fa-arrow-left" id='leftArrow' data-dir="-1"></i>			
+				<span id='currentPage'>1</span>
+				<i class="fas fa-arrow-right" id='rightArrow' data-dir="-1"></i>		
+			</p>
+		</div>
+		<div class='wrap_todo'>
+			<div class="wrap_clock">
+				<div class='username'>guest</div>			
+				<div class='txt_clock'>16시 45분 13초</div>
+			</div>
+			<div class="wrap_username">
+				<form action="#" class="frm_username">
+					<input class="inp_username" placeholder = "Type your name here">
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="bg-info">
+		<span class='txt_bg'>Your favorite Place</span>
+		<!-- api상에서 위치정보가 없을 경우 디폴드 값으로 쓸 문구 -->
+	</div>
+
+
+</body>
+</html>
